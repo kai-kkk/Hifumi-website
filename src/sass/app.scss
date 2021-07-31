@@ -1,0 +1,10 @@
+@import "variables/color";
+@import "variables/fontSize";
+@import "variables/fontWeight";
+@import "mixin/mixin";
+@import "body/common";
+@import "body/main";
+
+// body フォルダに scss ファイルを追加した場合、↑ここに import 追加してください
+
+// ここより下で具体的なスタイルの指定は行わないでください。

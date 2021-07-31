@@ -1,0 +1,28 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "description",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch",
+    "export": "git archive HEAD --output=export/export.zip",
+    "publish": "git archive HEAD public --output=export/publish.zip"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "postcss": "^8.3.4"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 5%",
+    "ie >= 11"
+  ]
+}
