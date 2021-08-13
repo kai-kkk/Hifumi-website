@@ -62,55 +62,56 @@
 }
 
 #main .index .sec01 {
-	height: 1080px;
-	position: relative;
-	z-index: 1 !important;
+    height: 1080px;
+    position: relative;
+    z-index: 1 !important;
     white-space: nowrap;
 }
 
 #main .index .sec01 .bg {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 #main .index .sec01 .com-box {
-	position: relative;
-	z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 #main .index .sec01 .photo {
-	position: absolute;
-	right: 15px;
-	top: -120px;
-	width: 480px;
+    position: absolute;
+    right: 15px;
+    top: -120px;
+    width: 480px;
 }
 
 #main .index .sec01 .white-box {
-	width: 49%;
-	position: absolute;
-	left: 15px;
-	top: 751px;
-	z-index: 2;
-	padding: 100px 8% 85px;;
-	background-color: #fff;
-	box-sizing: border-box;
+    width: 49%;
+    position: absolute;
+    left: 15px;
+    top: 751px;
+    z-index: 2;
+    padding: 100px 8% 85px;
+    background-color: #fff;
+    box-sizing: border-box;
 }
 
 #main .index .sec01 .white-box h2 {
-	margin-bottom: 65px;
-	font-size: 40px;
-	text-align: center;
-	font-family: 'Arsenal', sans-serif;
+    margin-bottom: 65px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Arsenal", sans-serif;
 }
 
 #main .index .sec01 .white-box p {
-	margin-bottom: 50px;
-	font-size: 20px;
-	line-height: 2.63;
-	letter-spacing: 1.5px;
-	font-family: "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 2.63;
+    letter-spacing: 1.5px;
+    font-family: "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "ＭＳ Ｐ明朝",
+        "MS PMincho", serif;
 }
