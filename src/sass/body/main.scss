@@ -1,21 +1,31 @@
 #main {
-    .index {
-        .top-ttl {
-            padding: 130px 72px 200px;
-            font-size: 50px;
-            letter-spacing: 0;
-            white-space: nowrap;
-        }
+    background-color: #fff;
 
-        .top-link a {
-            font-size: 1.6rem;
+    @include mq() {
+        background-color: #eee;
+    }
+
+    .index {
+        .index-container {
+            .top-ttl {
+                padding: 130px 72px 200px;
+                font-size: 50px;
+                letter-spacing: 0;
+                white-space: nowrap;
+
+                .widSpan {
+                    display: inline-block;
+                    width: 280px;
+                    text-align: left;
+                }
+            }
         }
 
         .sec01 {
-            height: 1080px;
             position: relative;
             z-index: 1;
             white-space: nowrap;
+            height: 1080px;
 
             .bg {
                 position: absolute;
@@ -24,46 +34,51 @@
                 width: 100%;
                 height: 100%;
                 overflow: hidden;
+                z-index: 1;
             }
 
             .com-box {
                 position: relative;
-                z-index: 1;
-            }
+                z-index: 5;
+                padding: 55px;
 
-            .photo {
-                position: absolute;
-                right: 15px;
-                top: -120px;
-                width: 480px;
-            }
+                /*
+                .photo {
+                    position: absolute;
+                    right: 15px;
+                    top: -120px;
+                    width: 480px;
+                }
+                */
 
-            .white-box {
-                width: 49%;
-                position: absolute;
-                left: 15px;
-                top: 751px;
-                z-index: 2;
-                padding: 100px 8% 85px;
-                background-color: #fff;
-            }
+                .white-box {
+                    width: 45%;
+                    position: absolute;
+                    top: 10%;
+                    left: 15px;
+                    z-index: 2;
+                    padding: 100px 8% 85px;
+                    background-color: #fff;
+                    border: 1px solid #333;
 
-            .white-box h2 {
-                margin-bottom: 65px;
-                font-size: 40px;
-                text-align: center;
-                font-family: "Arsenal", sans-serif;
-            }
+                    h2 {
+                        margin-bottom: 65px;
+                        font-size: 40px;
+                        text-align: center;
+                        font-family: "Arsenal", sans-serif;
+                    }
 
-            .white-box p {
-                margin-bottom: 50px;
-                font-size: 20px;
-                line-height: 2.63;
-                letter-spacing: 1.5px;
-            }
+                    p {
+                        margin-bottom: 50px;
+                        font-size: 20px;
+                        line-height: 2.63;
+                        letter-spacing: 1.5px;
+                    }
 
-            .white-box {
-                width: 45%;
+                    .top-link a {
+                        font-size: 1.6rem;
+                    }
+                }
             }
         }
 
@@ -71,6 +86,10 @@
             padding-top: 46%;
         }
     }
+
+    /**
+     * これより下はまだ存在しない要素
+     */
 
     .com-more .text-box .inner {
         padding: 30px 0;
@@ -80,21 +99,11 @@
         font-size: 3rem;
     }
 
-    .com-box {
-        padding: 55px;
-    }
-
     .com-email .mail-list input[type="email"] {
         width: 65%;
     }
 
     .com-email .h2-img img {
         width: 300px;
-    }
-
-    .widSpan {
-        display: inline-block;
-        width: 280px;
-        text-align: left;
     }
 }
