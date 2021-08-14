@@ -42,6 +42,19 @@
                 z-index: 5;
                 padding: 55px;
 
+
+.clearfix:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+.seminar-area{
+	padding: 0;
+}
+
                 /*
                 .photo {
                     position: absolute;
@@ -75,8 +88,8 @@
                         letter-spacing: 1.5px;
                     }
 
-                    .top-link a {
-                        font-size: 1.6rem;
+                    .top-link a{
+                        font-size: 20px;
                     }
                 }
             }
@@ -106,4 +119,49 @@
     .com-email .h2-img img {
         width: 300px;
     }
+
+}
+
+.com-link-ul {
+	margin: -20px 0 80px;
+    margin: 0 0 38px;
+	text-align: center;
+	padding-left: 0;
+    padding: 0;
+ li {
+	margin-left: 40px;
+	display: inline-block;
+
+  a {
+	padding-left: 50px;
+	display: block;
+	position: relative;
+	font-size: 20px;
+	overflow: hidden;
+	/*font-family: 'Arsenal', sans-serif;*/
+   :hover {
+	color: #ccc;
+
+}
+}}}     
+
+#main .text-box .inner{
+	padding: 59px 40px 64px;
+}
+
+#main .headLine{
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+#main .text-box .inner {
+	padding: 59px 0px 64px;
+	position: relative;
+	width: 100%;
+	background-color: #fff;
+}
+
+.seminar-cats span{
+	display: block;
+	margin-top: 15px;
 }
