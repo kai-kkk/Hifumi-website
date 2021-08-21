@@ -41,56 +41,55 @@
                 position: relative;
                 z-index: 5;
                 padding: 55px;
+            }
 
+            .clearfix:after {
+                height: 0;
+                visibility: hidden;
+                content: ".";
+                display: block;
+                clear: both;
+            }
 
-.clearfix:after {
-	height: 0;
-	visibility: hidden;
-	content: ".";
-	display: block;
-	clear: both;
-}
+            .seminar-area {
+                padding: 0;
+            }
 
-.seminar-area{
-	padding: 0;
-}
+            /*
+            .photo {
+                position: absolute;
+                right: 15px;
+                top: -120px;
+                width: 480px;
+            }
+            */
 
-                /*
-                .photo {
-                    position: absolute;
-                    right: 15px;
-                    top: -120px;
-                    width: 480px;
+            .white-box {
+                width: 45%;
+                position: absolute;
+                top: 10%;
+                left: 15px;
+                z-index: 2;
+                padding: 100px 8% 85px;
+                background-color: #fff;
+                border: 1px solid #333;
+
+                h2 {
+                    margin-bottom: 65px;
+                    font-size: 40px;
+                    text-align: center;
+                    font-family: "Arsenal", sans-serif;
                 }
-                */
 
-                .white-box {
-                    width: 45%;
-                    position: absolute;
-                    top: 10%;
-                    left: 15px;
-                    z-index: 2;
-                    padding: 100px 8% 85px;
-                    background-color: #fff;
-                    border: 1px solid #333;
+                p {
+                    margin-bottom: 50px;
+                    font-size: 20px;
+                    line-height: 2.63;
+                    letter-spacing: 1.5px;
+                }
 
-                    h2 {
-                        margin-bottom: 65px;
-                        font-size: 40px;
-                        text-align: center;
-                        font-family: "Arsenal", sans-serif;
-                    }
-
-                    p {
-                        margin-bottom: 50px;
-                        font-size: 20px;
-                        line-height: 2.63;
-                        letter-spacing: 1.5px;
-                    }
-
-                    .top-link a{
-                        font-size: 20px;
-                    }
+                .top-link a {
+                    font-size: 20px;
                 }
             }
         }
@@ -98,6 +97,49 @@
         .sec02 {
             padding-top: 46%;
         }
+    }
+
+
+    .com-link-ul {
+        margin: 0 0 38px;
+        text-align: center;
+        padding: 0;
+
+        li {
+            margin-left: 40px;
+            display: inline-block;
+
+            a {
+                padding-left: 50px;
+                display: block;
+                position: relative;
+                font-size: 20px;
+                overflow: hidden;
+                /*font-family: 'Arsenal', sans-serif;*/
+                :hover {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+
+    .text-box {
+        .inner {
+            padding: 59px 0 64px;
+            position: relative;
+            width: 100%;
+            background-color: #fff;
+        }
+    }
+
+    .headLine {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .seminar-cats span {
+        display: block;
+        margin-top: 15px;
     }
 
     /**
@@ -119,49 +161,4 @@
     .com-email .h2-img img {
         width: 300px;
     }
-
-}
-
-.com-link-ul {
-	margin: -20px 0 80px;
-    margin: 0 0 38px;
-	text-align: center;
-	padding-left: 0;
-    padding: 0;
- li {
-	margin-left: 40px;
-	display: inline-block;
-
-  a {
-	padding-left: 50px;
-	display: block;
-	position: relative;
-	font-size: 20px;
-	overflow: hidden;
-	/*font-family: 'Arsenal', sans-serif;*/
-   :hover {
-	color: #ccc;
-
-}
-}}}     
-
-#main .text-box .inner{
-	padding: 59px 40px 64px;
-}
-
-#main .headLine{
-	font-size: 30px;
-	margin-bottom: 30px;
-}
-
-#main .text-box .inner {
-	padding: 59px 0px 64px;
-	position: relative;
-	width: 100%;
-	background-color: #fff;
-}
-
-.seminar-cats span{
-	display: block;
-	margin-top: 15px;
 }
