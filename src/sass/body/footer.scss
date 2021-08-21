@@ -1,7 +1,22 @@
-.footer-top {
-  padding: 110px 45px;
-}
+@import "../mixin/mixin";
+@import "../variables/color";
 
-.footer-inner {
-  padding: 60px 45px 66px;
+.footer {
+    background-color: $color-gray;
+    color: $color-white;
+    padding: 32px 0;
+
+    &-inner {
+        text-align: center;
+    }
+
+    &-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+
+        > * + * {
+            margin-left: 16px;
+        }
+    }
 }
