@@ -3,6 +3,10 @@
 
 $spAndPcBreakpoint: 750; // pc と sp のレスポンシブを切り替える横幅のブレークポイント(px)
 
+$pcWidth: 1450px;
+$pcMargin: 24px;
+$pcMaxWidth: $pcWidth + $pcMargin * 2;
+
 // ブレークポイントの一覧
 $breakpoints: (
     'sp': 'screen and (max-width: #{$spAndPcBreakpoint}px)',
