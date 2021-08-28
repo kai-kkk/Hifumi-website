@@ -81,11 +81,22 @@
                     font-family: "Arsenal", sans-serif;
                 }
 
+                h1 {
+                    font-size: 30px;
+                }
+
                 p {
                     margin-bottom: 50px;
                     font-size: 20px;
                     line-height: 2.63;
                     letter-spacing: 1.5px;
+                }
+
+                .p2{
+                    margin-bottom: 50px;
+                    font-size: 15px;
+                    line-height: 1.9;
+                    letter-spacing: 1.0px;
                 }
 
                 .top-link a {
@@ -161,4 +172,18 @@
     .com-email .h2-img img {
         width: 300px;
     }
+}
+
+.top {
+    height: 80px;
+    width: 100%;
+    margin-left:80px;
+}
+
+.photo {
+    float: left;
+}
+.photo2{
+    width: 78%;
+
 }
