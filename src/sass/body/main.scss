@@ -8,9 +8,7 @@
     .main-inner {
         max-width: $pcMaxWidth;
         margin: 0 auto;
-        padding:  $pcMargin;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding: $pcMargin 100px;
     }
 
     .main-heading {
@@ -72,15 +70,16 @@
         }
     }
 
-    .page-top{
+    .page-top {
         background-color: rgb(79, 79, 248);
         height: 100px;
     }
 
-    .page-top2{
+    .page-top2 {
         background-color: rgb(221, 193, 66);
         height: 100px;
     }
+
     .page-title {
         text-align: center;
         font-size: 28px;
@@ -96,8 +95,9 @@
     .top {
         height: 160px;
         width: 100%;
-        margin-left:160px;
+        margin-left: 160px;
     }
+
     .top2 {
         height: 300px;
         width: 100%;
@@ -153,15 +153,6 @@
                 padding: 0;
             }
 
-            /*
-            .photo {
-                position: absolute;
-                right: 15px;
-                top: -120px;
-                width: 480px;
-            }
-            */
-
             .white-box {
                 width: 45%;
                 position: absolute;
@@ -170,7 +161,7 @@
                 z-index: 2;
                 padding: 100px 8% 85px;
                 background-color: rgb(248, 244, 244);
-                
+
 
                 h2 {
                     margin-bottom: 65px;
@@ -190,7 +181,7 @@
                     letter-spacing: 1.5px;
                 }
 
-                .p2{
+                .p2 {
                     margin-bottom: 50px;
                     font-size: 15px;
                     line-height: 1.9;
@@ -205,6 +196,44 @@
 
         .sec02 {
             padding-top: 46%;
+        }
+
+        .sec03 {
+            padding: 0 120px;
+            margin-bottom: 60px;
+
+            .sec03-title {
+                margin-bottom: 64px;
+                font-size: 40px;
+                text-align: center;
+                font-family: "Arsenal", sans-serif;
+            }
+
+            .profile-box {
+                display: flex;
+
+                .profile-box-image {
+                    width: 30%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .profile-box-text {
+                    margin-left: 32px;
+
+                    h2 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 1.9;
+                        letter-spacing: 1.0px;
+                    }
+                }
+            }
         }
     }
 
@@ -247,14 +276,14 @@
         text-align: center;
     }
 
-    .text-box2{
+    .text-box2 {
         text-align: center;
         font-size: 16px;
     }
 
     .seminar-cats span {
         display: block;
-        margin-top: 15px; 
+        margin-top: 15px;
     }
 
     /**
@@ -276,12 +305,4 @@
     .com-email .h2-img img {
         width: 300px;
     }
-}
-
-.photo {
-    float: left;
-}
-.photo2{
-    width: 78%;
-
 }
