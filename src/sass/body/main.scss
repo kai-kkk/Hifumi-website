@@ -323,146 +323,158 @@
 body {
     font-family: "Open Sans", sans-serif;
     line-height: 1.25;
-  }
-  
-  table {
+}
+
+table {
     border-collapse: collapse;
     margin: 0 auto;
     padding: 0;
     width: 650px;
     table-layout: fixed;
-  }
-  
-  table tr {
+}
+
+table tr {
     background-color: #fff;
     border: 1px solid #bbb;
     padding: .35em;
-  }
-  table th,
-  table td {
+}
+
+table th,
+table td {
     padding: 1em 10px 1em 1em;
     border-right: 1px solid #bbb;
-  }
-  table th {
+}
+
+table th {
     font-size: .85em;
-  }
-  table thead tr{
+}
+
+table thead tr {
     background-color: #eee;
-  }
-  .txt{
-     text-align: left;
-     font-size: .85em;
-  }
-  .price{
-     text-align: right;
-  }
-  @media screen and (max-width: 600px) {
+}
+
+.txt {
+    text-align: left;
+    font-size: .85em;
+}
+
+.price {
+    text-align: right;
+}
+
+@media screen and (max-width: 600px) {
     table {
-      border: 0;
-      width:100%
+        border: 0;
+        width: 100%
     }
-    table th{
-      background-color: #eee;
-      display: block;
-      border-right: none;
+    table th {
+        background-color: #eee;
+        display: block;
+        border-right: none;
     }
     table thead {
-      border: none;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
     }
-    
-    table tr {
-      display: block;
-      margin-bottom: .625em;
-    }
-    
-    table td {
-      border-bottom: 1px solid #bbb;
-      display: block;
-      font-size: .8em;
-      text-align: right;
-      position: relative;
-      padding: .625em .625em .625em 4em;
-      border-right: none;
-    }
-    
-    table td::before {
-      content: attr(data-label);
-      font-weight: bold;
-      position: absolute;
-      left: 10px;
-    }
-    
-    table td:last-child {
-      border-bottom: 0;
-    }
-  }
 
-  ul {
+    table tr {
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #bbb;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+        position: relative;
+        padding: .625em .625em .625em 4em;
+        border-right: none;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.pricecards{
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-padding-top: 60px;
 
-        }
-.pricecard{
-  flex: 0 0 33%;
-  text-align: center;
-  border: 1px solid #eee;
-  padding-bottom: 1rem;
-  box-sizing: border-box;
-  margin:0 auto 3em;
-        }
-        h3{
-            background: rgb(221, 193, 66);;
-            color: #fff;
-            padding: 10px;
-            margin: 0;  
-        }
-        
-        h4{
-            font-size: 300%;
-            margin: 0 auto;
-            padding: 1rem 0 0;
-        }
-        p{
-            margin: 0;
-            padding: 1rem;
-            text-align: left;
-        }
-        .pricecard a{
-            padding: 10px 40px;
-            background: #fb5859;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 3px;
-            display: inline-block;
-        }
-@media screen and (max-width: 600px){
-.profile_card, .pricecards, .profile_cards {
-    flex-direction: column;
-    -webkit-flex-direction: column;
+.pricecards {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    padding-top: 60px;
+
 }
-  .pricecard, .card_photo {
-    flex: 0 0 auto;
-    -webkit-flex: 0 0 auto;
+
+.pricecard {
+    flex: 0 0 33%;
+    text-align: center;
+    border: 1px solid #eee;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+    margin: 0 auto 3em;
 }
+
+h3 {
+    background: rgb(221, 193, 66);;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 300%;
+    margin: 0 auto;
+    padding: 1rem 0 0;
+}
+
+p {
+    margin: 0;
+    padding: 1rem;
+    text-align: left;
+}
+
+.pricecard a {
+    padding: 10px 40px;
+    background: #fb5859;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    .profile_card, .pricecards, .profile_cards {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .pricecard, .card_photo {
+        flex: 0 0 auto;
+        -webkit-flex: 0 0 auto;
+    }
 }
 
 .Form {
@@ -470,57 +482,63 @@ padding-top: 60px;
     margin-left: auto;
     margin-right: auto;
     max-width: 720px;
-  }
-  @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .Form {
-      margin-top: 40px;
+        margin-top: 40px;
     }
-  }
-  .Form-Item {
+}
+
+.Form-Item {
     border-top: 1px solid #ddd;
     padding-top: 24px;
     padding-bottom: 24px;
     width: 100%;
     display: flex;
     align-items: center;
-  }
-  @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .Form-Item {
-      padding-left: 14px;
-      padding-right: 14px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      flex-wrap: wrap;
+        padding: 16px 14px;
+        flex-wrap: wrap;
     }
-  }
-  .Form-Item:nth-child(5) {
+}
+
+.Form-Item:nth-child(5) {
     border-bottom: 1px solid #ddd;
-  }
-  .Form-Item-Label {
+}
+
+.Form-Item-Label {
     width: 100%;
     max-width: 248px;
     letter-spacing: 0.05em;
     font-weight: bold;
     font-size: 18px;
-  }
-  @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .Form-Item-Label {
-      max-width: inherit;
-      display: flex;
-      align-items: center;
-      font-size: 15px;
+        max-width: inherit;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
     }
-  }
-  .Form-Item-Label.isMsg {
+}
+
+.Form-Item-Label.isMsg {
     margin-top: 8px;
     margin-bottom: auto;
-  }
-  @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .Form-Item-Label.isMsg {
-      margin-top: 0;
+        margin-top: 0;
     }
-  }
-  .Form-Item-Label-Required {
+}
+
+.Form-Item-Label-Required {
     border-radius: 6px;
     margin-right: 8px;
     padding-top: 8px;
@@ -531,94 +549,80 @@ padding-top: 60px;
     background: #5bc8ac;
     color: #fff;
     font-size: 14px;
-  }
-  @media screen and (max-width: 480px) {
-    .Form-Item-Label-Required {
-      border-radius: 4px;
-      padding-top: 4px;
-      padding-bottom: 4px;
-      width: 32px;
-      font-size: 10px;
-    }
-  }
+}
 
-  .Form {
+@media screen and (max-width: 480px) {
+    .Form-Item-Label-Required {
+        border-radius: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 32px;
+        font-size: 10px;
+    }
+}
+
+.Form {
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     max-width: 720px;
-    }
-    @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .Form {
-    margin-top: 40px;
+        margin-top: 40px;
     }
-    }
-    .Form-Item {
+}
+
+.Form-Item {
     border-top: 1px solid #ddd;
     padding-top: 24px;
     padding-bottom: 24px;
     width: 100%;
     display: flex;
     align-items: center;
-    }
-    @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .Form-Item {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    flex-wrap: wrap;
+        padding: 16px 14px;
+        flex-wrap: wrap;
     }
-    }
-    .Form-Item:nth-child(5) {
+}
+
+.Form-Item:nth-child(5) {
     border-bottom: 1px solid #ddd;
-    }
-    .Form-Item-Label {
+}
+
+.Form-Item-Label {
     width: 100%;
     max-width: 248px;
     letter-spacing: 0.05em;
     font-weight: bold;
     font-size: 18px;
-    }
-    @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .Form-Item-Label {
-    max-width: inherit;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
+        max-width: inherit;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
     }
-    }
-    .Form-Item-Label.isMsg {
+}
+
+.Form-Item-Label.isMsg {
     margin-top: 8px;
     margin-bottom: auto;
-    }
-    @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .Form-Item-Label.isMsg {
-    margin-top: 0;
+        margin-top: 0;
     }
-    }
-    .Form-Item-Label-Required {
-    border-radius: 6px;
-    margin-right: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 48px;
-    display: inline-block;
-    text-align: center;
-    background: #5bc8ac;
-    color: #fff;
-    font-size: 14px;
-    }
-    @media screen and (max-width: 480px) {
-    .Form-Item-Label-Required {
-    border-radius: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    width: 32px;
-    font-size: 10px;
-    }
-    }
-    .Form-Item-Input {
+}
+
+.Form-Item-Input {
     border: 1px solid #ddd;
     border-radius: 6px;
     margin-left: 40px;
@@ -630,17 +634,19 @@ padding-top: 60px;
     max-width: 410px;
     background: #eaedf2;
     font-size: 18px;
-    }
-    @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .Form-Item-Input {
-    margin-left: 0;
-    margin-top: 18px;
-    height: 40px;
-    flex: inherit;
-    font-size: 15px;
+        margin-left: 0;
+        margin-top: 18px;
+        height: 40px;
+        flex: inherit;
+        font-size: 15px;
     }
-    }
-    .Form-Item-Textarea {
+}
+
+.Form-Item-Textarea {
     border: 1px solid #ddd;
     border-radius: 6px;
     margin-left: 40px;
@@ -652,17 +658,19 @@ padding-top: 60px;
     max-width: 410px;
     background: #eaedf2;
     font-size: 18px;
-    }
-    @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .Form-Item-Textarea {
-    margin-top: 18px;
-    margin-left: 0;
-    height: 200px;
-    flex: inherit;
-    font-size: 15px;
+        margin-top: 18px;
+        margin-left: 0;
+        height: 200px;
+        flex: inherit;
+        font-size: 15px;
     }
-    }
-    .Form-Btn {
+}
+
+.Form-Btn {
     border-radius: 6px;
     margin-top: 32px;
     margin-left: auto;
@@ -676,13 +684,14 @@ padding-top: 60px;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
-    }
-    @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .Form-Btn {
-    margin-top: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 160px;
-    font-size: 16px;
+        margin-top: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 160px;
+        font-size: 16px;
     }
-    }
+}
